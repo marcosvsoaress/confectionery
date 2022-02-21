@@ -1,0 +1,201 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Confectionery",
+		"_postman_id": "c2de66a1-4a70-020b-f770-9ceeb4c15ed9",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cake",
+			"description": "",
+			"item": [
+				{
+					"name": "Store cake",
+					"request": {
+						"url": "{{base_url}}/cakes",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Bolo de chocolate ao leite",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "weight",
+									"value": "3.150",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "price",
+									"value": "150.00",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "quantity",
+									"value": "10",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "list cake",
+					"request": {
+						"url": "{{base_url}}/cakes/1",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "list all cakes",
+					"request": {
+						"url": "{{base_url}}/cakes",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Update cake",
+					"request": {
+						"url": "{{base_url}}/cakes/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "name",
+									"value": "Bolo de melão",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "weight",
+									"value": "1.120",
+									"type": "text",
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "359.99",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "quantity",
+									"value": "100",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Delete cake",
+					"request": {
+						"url": "{{base_url}}/cakes/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "E-mails",
+			"description": "",
+			"item": [
+				{
+					"name": "Store interest listcake",
+					"request": {
+						"url": "{{base_url}}/cakes/1/interest-list",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"description": ""
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "email",
+									"value": "maria@gmail.com",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
